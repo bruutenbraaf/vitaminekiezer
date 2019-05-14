@@ -743,6 +743,10 @@ footer ul.menu li:hover:after {
     font-size:12px;
 }
 
+.adv {
+    margin-bottom:30px;
+}
+
 .adv-title {
     font-weight: bold;
     font-size:14px;
