@@ -1,0 +1,1 @@
+<img class="get--logo" src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo.svg">
