@@ -298,7 +298,7 @@ add_shortcode( 'add_vitamine_single', 'vitamine_toevoegen_button_large' );
 
 // get vitamines function
 function get_vitamines() {
-  $data = explode(',', $_COOKIE["vitamines"]);
+  $data = explode(',', $_COOKIE['vitamines']);
   return $data;
 }
 

@@ -48,31 +48,7 @@
         <div class="row">
             <div class="col-lg-3 col-md-3 sidebar">
                 <?php get_template_part( 'template-parts/content', 'postcount' ); ?>
-                <?php if ( get_field( 'inschakelen', 'option' ) == 1 ) { ?>
-                    <?php if ( have_rows( 'afbeelding_adv', 'option' ) ) : ?>
-                    <?php while ( have_rows( 'afbeelding_adv', 'option' ) ) : the_row(); ?>
-                        <?php $link = get_sub_field( 'link' ); ?>
-                        <?php if ( $link ) { ?>
-                        <a href="<?php echo $link['url']; ?>" target="<?php echo $link['target']; ?>">
-                            <?php $afbeelding = get_sub_field( 'afbeelding' ); ?>
-                            <?php if ( $afbeelding ) { ?>
-                                <img src="<?php echo $afbeelding['url']; ?>" alt="<?php echo $afbeelding['alt']; ?>" />
-                            <?php } ?>
-                        </a>
-                        <?php } ?>
-                    <?php endwhile; ?>
-                <?php endif; ?>
-                <?php if ( have_rows( 'tekst_advertentie', 'option' ) ) : ?>
-                    <?php while ( have_rows( 'tekst_advertentie', 'option' ) ) : the_row(); ?>
-                        <?php $link = get_sub_field( 'link' ); ?>
-                        <?php if ( $link ) { ?>
-                            <a href="<?php echo $link['url']; ?>" target="<?php echo $link['target']; ?>">
-                            <div class="adv-title"><?php the_sub_field( 'titel' ); ?></div>
-                            <div class="adv-content"><?php the_sub_field( 'content' ); ?></a></div>
-                        <?php } ?>
-                    <?php endwhile; ?>
-                <?php endif; ?>
-            <?php } ?>
+                <?php get_template_part( 'template-parts/content', 'adv' ); ?>
             <div class="inner">
                 <?php if(is_active_sidebar('vergelijker')){
 						dynamic_sidebar('vergelijker');
