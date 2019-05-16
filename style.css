@@ -32,6 +32,18 @@ button {
     appearance: none;
 }
 
+.alignleft {
+    float: left;
+    margin: 0px 20px 10px 0px;
+    border-radius: 10px;
+}
+
+.alignright {
+    float: right;
+    margin: 0px 0px 10px 20px;
+    border-radius: 10px;
+}
+
 section {
     width: 100%;
     padding: 30px 0px;

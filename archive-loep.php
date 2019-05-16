@@ -42,7 +42,7 @@
                     ) ); ?>
                     <?php if ( $loop->have_posts() ) : ?>
                         <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
-                            <div class="col-xl-3 col-md-4 single-p">
+                            <div class="col-lg-3 col-xl-4 col-md-4 single-p">
                                 <div class="inner">
                                     <a href="<?php the_permalink();?>">
                                         <?php $afbeelding_bericht = get_field( 'afbeelding_bericht' ); ?>
