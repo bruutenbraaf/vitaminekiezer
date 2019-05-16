@@ -1474,6 +1474,10 @@ li.overall {
     padding:15px;
 }
 
+.si-in .widget {
+    margin-bottom:30px;
+}
+
 .si-in ul {
     list-style: none;
     padding:0;
@@ -1487,6 +1491,16 @@ li.overall {
     font-size: 16px;
     line-height: 19px;
     color: #333333;
+}
+
+.si-in .widget ul li a {
+    font-weight: normal;
+    font-size: 14px;
+}
+
+.si-in li.page_item {
+    padding: 5px;
+    border-bottom: 1px solid #ececec;
 }
 
 .si-header h1, .si-header p {
@@ -1517,6 +1531,10 @@ h3.widget-title{
     margin-bottom:30px;
 }
 
+.single-p:hover {
+    text-decoration:none !important;
+}
+
 .single-p .inner {
     height:100%;
     background: #fff;
@@ -1529,7 +1547,7 @@ h3.widget-title{
 .single-p .title {
     font-style: normal;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 18px;
     color: #333333;
 }
