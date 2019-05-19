@@ -1,24 +1,5 @@
 <?php get_header(); ?>
 
-<div class="si-header loep-header">
-    <div class="container">
-        <div class="row">
-            <div class="offset-md-4 col-md-8">
-            <h1> <?php the_title();?> </h1>
-                <?php if ( have_rows( 'header' ) ) : ?>
-                    <?php while ( have_rows( 'header' ) ) : the_row(); ?>
-                        <p ><?php the_sub_field( 'subtitel' ); ?></p>
-                        <?php $header_knop = get_sub_field( 'header_knop' ); ?>
-                        <?php if ( $header_knop ) { ?>
-                            <a class="btn" href="<?php echo $header_knop['url']; ?>" target="<?php echo $header_knop['target']; ?>"><?php echo $header_knop['title']; ?></a>
-                        <?php } ?>
-                    <?php endwhile; ?>
-                <?php endif; ?>
-            </div>
-        </div>
-    </div>
-</div>
-
 <section id="content">
 <div class="container">
         <div class="row">
@@ -31,6 +12,11 @@
                 </div>
             </div>
             <div class="col-lg-9 col-md-9">
+
+            <h1> <?php the_title();?> </h1>
+            <p><?php the_sub_field( 'subtitel' ); ?></p>
+
+
                 <?php if ( have_rows( 'builder' ) ): ?>
                     <?php while ( have_rows( 'builder' ) ) : the_row(); ?>
                         <?php if ( get_row_layout() == 'volledige_breedte_tekst' ) : ?>
