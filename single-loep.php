@@ -35,7 +35,7 @@
                     <?php while ( have_rows( 'builder' ) ) : the_row(); ?>
                         <?php if ( get_row_layout() == 'volledige_breedte_tekst' ) : ?>
                                 <div class="row">
-                                    <div class="col-md-8 offset-md-1 <?php if ( get_sub_field( 'tekst_centreren' ) == 1 ) { ?>center<?php } ?>">
+                                    <div class="col-md-9 offset-md-1 <?php if ( get_sub_field( 'tekst_centreren' ) == 1 ) { ?>center<?php } ?>">
                                         <h2><?php the_sub_field( 'titel' ); ?></h2>
                                         <?php the_sub_field( 'content' ); ?>
                                     </div>
