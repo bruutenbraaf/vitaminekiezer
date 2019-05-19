@@ -12,10 +12,16 @@
                 </div>
             </div>
             <div class="col-lg-9 col-md-9">
-
-            <h1> <?php the_title();?> </h1>
-            <p><?php the_sub_field( 'subtitel' ); ?></p>
-
+                <div class="row">
+                    <div class="col-md-9 offset-md-1">
+                    <h1> <?php the_title();?> </h1>
+                        <?php if ( have_rows( 'header' ) ) : ?>
+                            <?php while ( have_rows( 'header' ) ) : the_row(); ?>
+                                <p ><?php the_sub_field( 'subtitel' ); ?></p>
+                            <?php endwhile; ?>
+                        <?php endif; ?>
+                    </div>
+                </div>
 
                 <?php if ( have_rows( 'builder' ) ): ?>
                     <?php while ( have_rows( 'builder' ) ) : the_row(); ?>
