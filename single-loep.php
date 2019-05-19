@@ -3,7 +3,7 @@
 <div class="si-header loep-header">
     <div class="container">
         <div class="row">
-            <div class="offset-4 col-md-8">
+            <div class="offset-md-4 col-md-8">
             <h1> <?php the_title();?> </h1>
                 <?php if ( have_rows( 'header' ) ) : ?>
                     <?php while ( have_rows( 'header' ) ) : the_row(); ?>
