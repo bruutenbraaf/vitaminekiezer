@@ -27,3 +27,6 @@
     <li><div class="row"><div class="col"><span class="it-title">Zink</span><span class="it-waarde"><?php the_field( 'zink' ); ?></span></div><div class="col"><?php the_field( 'zink_w' ); ?></div></div></li>
     </ul>
 </div>
+
+
+        

@@ -1,0 +1,132 @@
+.product .addproduct {
+  width: 100%;
+  margin: 0px;
+  align-items: center; }
+.product .inner .productinfo {
+  height: 100%; }
+
+.overall .row div {
+  flex-grow: 1; }
+.overall .row .score--bar {
+  width: 25%; }
+
+.scoresrow {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap; }
+  .scoresrow span {
+    flex-grow: 1; }
+  .scoresrow div {
+    flex-grow: 1; }
+  .scoresrow .the-bar {
+    width: 25%; }
+
+.scores-vergelijker {
+  width: 100%; }
+  .scores-vergelijker tr {
+    align-items: center; }
+    .scores-vergelijker tr td {
+      flex-grow: 1; }
+    .scores-vergelijker tr td.bar {
+      min-width: 120px;
+      padding: 0px 6px; }
+    .scores-vergelijker tr td.the-score {
+      white-space: nowrap; }
+  .scores-vergelijker tr:nth-child(2) td {
+    padding-top: 10px; }
+  .scores-vergelijker td {
+    padding: 5px 0px; }
+  .scores-vergelijker tr.main-score {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+    padding: 0px 10px; }
+    .scores-vergelijker tr.main-score td {
+      padding: 10px 0px; }
+    .scores-vergelijker tr.main-score td.bar {
+      padding: 10px 6px; }
+    .scores-vergelijker tr.main-score td.main-score-item .x-score {
+      font-weight: 600;
+      font-size: 28px;
+      line-height: 32px;
+      display: flex;
+      align-items: center; }
+  .scores-vergelijker .the-bar {
+    width: 100%;
+    height: 10px;
+    background: #E0E0E0;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.05);
+    border-radius: 50px;
+    position: relative;
+    min-width: 85px;
+    max-width: 140px;
+    float: right; }
+
+.v-content span.advice-price {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  color: #333333;
+  padding: 40px 0px 20px 0px;
+  display: block; }
+.v-content .cta-btn {
+  background: #06D15D;
+  font-weight: bold;
+  margin: 0 auto;
+  display: table;
+  margin-bottom: 50px; }
+.v-content .full--btn {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 60px;
+  display: block;
+  font-weight: 600; }
+
+.v-product {
+  padding: 0px 15px;
+  margin: 10px 0px; }
+
+.product-images {
+  padding-bottom: 0px;
+  padding-top: 60px; }
+
+.product-in {
+  padding-top: 0px; }
+
+.ingredient-list {
+  margin-bottom: 30px; }
+
+.it-title {
+  width: 100%;
+  display: block; }
+
+.it-waarde {
+  width: 100%;
+  display: block; }
+
+.i-titel {
+  font-size: 16px;
+  padding-right: 42px; }
+
+.s-title h1 {
+  font-size: 52px; }
+
+.ken-label {
+  background: #E4EEFF;
+  border-radius: 15px;
+  padding: 13px 63px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  color: #6D91D1;
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 10px; }
+
+.kenmerken {
+  margin-top: 10px;
+  margin-bottom: 30px;
+  display: inline-block; }
+
+.productlogo {
+  max-width: 200px; }
+
+/*# sourceMappingURL=style.css.map */

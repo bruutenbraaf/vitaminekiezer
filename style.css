@@ -4,7 +4,7 @@ Theme URI: httpss://bruutenbraaf.nl
 Author: Bruut & Braaf
 Author URI: https://bruutenbraaf.nl
 Description: Theme for viki
-Version: 1.01
+Version: 0.0
 Text Domain: viki
 
 
@@ -12,6 +12,7 @@ Text Domain: viki
 
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700');
+@import url('./css/style.min.css');
 
 /* Body */
 
@@ -30,18 +31,6 @@ body {
 button {
     -webkit-appearance: none;
     appearance: none;
-}
-
-.alignleft {
-    float: left;
-    margin: 0px 20px 10px 0px;
-    border-radius: 10px;
-}
-
-.alignright {
-    float: right;
-    margin: 0px 0px 10px 20px;
-    border-radius: 10px;
 }
 
 section {
@@ -457,7 +446,7 @@ section#feedback {
 /* Footer */
 
 footer {
-    padding-top: 80px;
+    padding-top: 60px;
     padding-bottom: 15px;
     background: #D93A3A;
 }
@@ -753,10 +742,6 @@ footer ul.menu li:hover:after {
 
 .adv-content p {
     font-size:12px;
-}
-
-.adv {
-    margin-bottom:30px;
 }
 
 .adv-title {
@@ -1145,10 +1130,11 @@ footer ul.menu li:hover:after {
     padding:15px;
     font-style: normal;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 16px;
     line-height: normal;
     color: #333333;
     position: relative;
+    padding-right: 42px;
 }
 
 .i-titel:after {
@@ -1322,34 +1308,6 @@ li.overall {
     margin-left:15px;
 }
 
-/* Vergelijker pagina */
-.v-carousel:before {
-    content:'';
-    left:0px;
-    top:0px;
-    position: absolute;
-    width:300px;
-    height:100%;
-    z-index: 999;
-    background: -moz-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(left, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to right, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 */
-}
-
-.v-carousel:after {
-    content:'';
-    right:0px;
-    top:0px;
-    position: absolute;
-    width:300px;
-    height:100%;
-    z-index: 999;
-    background: -moz-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,0.58) 49%, rgba(255,255,255,1) 84%, rgba(255,255,255,1) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%,rgba(255,255,255,0.58) 49%,rgba(255,255,255,1) 84%,rgba(255,255,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to right, rgba(255,255,255,0) 0%,rgba(255,255,255,0.58) 49%,rgba(255,255,255,1) 84%,rgba(255,255,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 */
-}
 
 .v-productimage {
     position: relative;
@@ -1474,10 +1432,6 @@ li.overall {
     padding:15px;
 }
 
-.si-in .widget {
-    margin-bottom:30px;
-}
-
 .si-in ul {
     list-style: none;
     padding:0;
@@ -1491,16 +1445,6 @@ li.overall {
     font-size: 16px;
     line-height: 19px;
     color: #333333;
-}
-
-.si-in .widget ul li a {
-    font-weight: normal;
-    font-size: 14px;
-}
-
-.si-in li.page_item {
-    padding: 5px;
-    border-bottom: 1px solid #ececec;
 }
 
 .si-header h1, .si-header p {
@@ -1531,10 +1475,6 @@ h3.widget-title{
     margin-bottom:30px;
 }
 
-.single-p:hover {
-    text-decoration:none !important;
-}
-
 .single-p .inner {
     height:100%;
     background: #fff;
@@ -1547,7 +1487,7 @@ h3.widget-title{
 .single-p .title {
     font-style: normal;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 18px;
     color: #333333;
 }
