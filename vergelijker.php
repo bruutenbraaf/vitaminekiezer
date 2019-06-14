@@ -4,6 +4,19 @@
 
 get_header(); ?>
 
+<div class="header-page d-flex justify-content-center align-items-center">
+    <div class="inner">
+        <h1><?php _e('Vergelijk hier je producten', 'vitaminekiezer'); ?></h1>
+        <?php if (have_rows('usps', 'option')) : ?>
+            <ul>
+                <?php while (have_rows('usps', 'option')) : the_row(); ?>
+                    <li> <?php the_sub_field('usp'); ?> </li>
+                <?php endwhile; ?>
+            </ul>
+        <?php endif; ?>
+    </div>
+</div>
+
 <div class="breadcrumbs">
     <div class="container">
         <div class="row">
