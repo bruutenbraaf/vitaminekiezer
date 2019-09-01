@@ -82,6 +82,8 @@
                                 </div>
                             <?php endwhile; ?>
                         <?php endif; ?>
+                    </div>
+                </div>
             </section>
         <?php elseif (get_row_layout() == 'contactformulier') : ?>
             <section id="feedback">
