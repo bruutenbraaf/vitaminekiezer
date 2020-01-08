@@ -1,26 +1,5 @@
 <table class="scores-vergelijker">
     <tbody>
-        <?php if (have_rows('header_vitamine')) : ?>
-            <?php while (have_rows('header_vitamine')) : the_row(); ?>
-                <?php if (get_sub_field('algemene_score')) { ?>
-                    <tr class="main-score">
-                        <td> <span class="score-title">Viki’s kwaliteitscore</span> </td>
-
-                        <td class="bar">
-                            <div class="the-bar">
-                                <div class="bar-score" style="width:<?php $type = get_sub_field('algemene_score');
-                                                                    $type = str_replace(str_split('\\/:*?"<>|.,'), '', $type);
-                                                                    echo $type; ?>%;">
-                                </div>
-                            </div>
-                        </td>
-                        <td class="main-score-item ">
-                            <span class="x-score"><?php the_sub_field('algemene_score'); ?></span>
-                        </td>
-                    </tr>
-                <?php } ?>
-            <?php endwhile; ?>
-        <?php endif; ?>
         <?php if (get_field('kwaliteit_score_header')) { ?>
             <tr class="overallscore">
                 <td> <span class="score-title-overall">Viki’s kwaliteitsscore</span> </td>
@@ -37,6 +16,11 @@
                 </td>
             </tr>
         <?php } ?>
+    </tbody>
+</table>
+
+<table class="scores-vergelijker">
+    <tbody>
         <?php if (get_field('compleetheid')) { ?>
             <tr>
                 <td> <span class="score-title">Compleetheid</span> </td>

@@ -28,11 +28,10 @@ function brute_scripts()
   wp_enqueue_script("jquery");
   wp_enqueue_style('bootstrap', get_template_directory_uri() . '/css/bootstrap.css');
   wp_enqueue_style('slickslider', get_template_directory_uri() . '/css/slick.css');
-
   wp_enqueue_script('slicksliderjs', get_template_directory_uri() . '/js/slick.min.js', array(), '1.0.0', true);
   wp_enqueue_script('bootstrapjs', get_template_directory_uri() . '/js/bootstrap.min.js', array(), '1.0.0', true);
   wp_enqueue_script('main-scripts', get_template_directory_uri() . '/js/scripts.js', array(), '1.0.0', true);
-
+  wp_enqueue_script('readmorejs', get_template_directory_uri() . '/js/readmore.min.js', array(), '1.0.0', false);
   wp_enqueue_style('main-style', get_template_directory_uri() . '/style.css', true);
 }
 add_action('wp_enqueue_scripts', 'brute_scripts');
@@ -182,10 +181,9 @@ register_sidebar(array(
   'after_title' => '</h3>',
 ));
 
-
 register_sidebar(array(
-  'name' => 'Vergelijker',
-  'id' => 'vergelijker',
+  'name' => 'Eerste widget vergelijker',
+  'id' => 'vergelijker_reviews',
   'description' => 'Wordt getoond in de vergelijker',
   'before_widget' => '<div class="widget">',
   'after_widget' => '</div>',
@@ -194,9 +192,49 @@ register_sidebar(array(
 ));
 
 register_sidebar(array(
-  'name' => 'Onder de loep',
+  'name' => 'Tweede widget vergelijker',
+  'id' => 'verlijker_boven',
+  'description' => 'Deze is voor de video (niets anders in plaatsen)',
+  'before_widget' => '<div class="widget">',
+  'after_widget' => '</div>',
+  'before_title' => '<h3 class="widget-title">',
+  'after_title' => '</h3>',
+));
+
+register_sidebar(array(
+  'name' => 'Derde widget vergelijker',
+  'id' => 'vergelijker',
+  'description' => 'Dit is de filteren widget (niet aan komen)',
+  'before_widget' => '<div class="widget">',
+  'after_widget' => '</div>',
+  'before_title' => '<h3 class="widget-title">',
+  'after_title' => '</h3>',
+));
+
+register_sidebar(array(
+  'name' => 'Eerste widget Onder de loep',
+  'id' => 'loep_boven',
+  'description' => 'Deze is voor de video (niets anders in plaatsen)',
+  'before_widget' => '<div class="widget">',
+  'after_widget' => '</div>',
+  'before_title' => '<h3 class="widget-title">',
+  'after_title' => '</h3>',
+));
+
+register_sidebar(array(
+  'name' => 'Tweede widget Onder de loep',
   'id' => 'loep',
   'description' => 'Wordt getoond bij onder de loep',
+  'before_widget' => '<div class="widget">',
+  'after_widget' => '</div>',
+  'before_title' => '<h3 class="widget-title">',
+  'after_title' => '</h3>',
+));
+
+register_sidebar(array(
+  'name' => 'Footer home (rechts)',
+  'id' => 'verlijker_onder',
+  'description' => 'Wordt getoond in de vergelijker',
   'before_widget' => '<div class="widget">',
   'after_widget' => '</div>',
   'before_title' => '<h3 class="widget-title">',
@@ -241,12 +279,12 @@ function vitamine_cookie()
         $data = array_unique($data);
         $data = implode(',', $data);
 
-        setcookie("vitamines", $data, time() + (86400 * 365), "/"); // 86400 = 1 day
+        setcookie("vitamines", $data, time() + (86400 * 1), "/"); // 86400 = 1 day
       } else {
         $data = array();
         $data[] = $_POST['vitamines'];
         $data = implode(',', $data);
-        setcookie("vitamines", $data, time() + (86400 * 365), "/"); // 86400 = 1 day
+        setcookie("vitamines", $data, time() + (86400 * 1), "/"); // 86400 = 1 day
       }
     } catch (Exception $e) {
       echo 'Caught exception: ',  $e->getMessage(), "\n";
@@ -301,8 +339,8 @@ function vitamine_toevoegen_button_large()
   <button class="btn v-btn <?php $os = get_vitamines();
                             $id = get_the_ID();
                             if (in_array($id, $os)) { ?>added<?php } ?>" onclick="vitamine_callback('add', <?php echo $post->ID; ?>)"><?php $os = get_vitamines();
-                                                                                                                                                                                      $id = get_the_ID();
-                                                                                                                                                                                      if (in_array($id, $os)) { ?><?php _e('Verwijder uit vergelijker', 'vitamine-plugin'); ?><?php } else { ?><?php _e('Voeg toe aan vergelijker', 'vitamine-plugin'); ?><?php } ?></button>
+                                                                                                                                        $id = get_the_ID();
+                                                                                                                                        if (in_array($id, $os)) { ?><?php _e('Verwijder uit vergelijker', 'vitamine-plugin'); ?><?php } else { ?><?php _e('Voeg toe aan vergelijker', 'vitamine-plugin'); ?><?php } ?></button>
   <?php return ob_get_clean();
 }
 add_shortcode('add_vitamine_single', 'vitamine_toevoegen_button_large');
@@ -322,3 +360,37 @@ function get_vitamines_func()
   <?php return ob_get_clean();
 }
 add_shortcode('get_vitamines', 'get_vitamines_func');
+
+add_theme_support('post-thumbnails');
+
+
+
+function get_all_them_posts()
+{
+  $count_posts = wp_count_posts();
+
+  $published_posts = $count_posts->publish;
+  return $published_posts;
+}
+
+
+
+
+
+
+add_filter('manage_multivitaminen_posts_columns', 'set_custom_edit_multivitaminen_columns');
+function set_custom_edit_multivitaminen_columns($columns)
+{
+  $columns['vikiid'] = __('Viki ID', 'uitgelicht');
+  return $columns;
+}
+
+
+add_action('manage_multivitaminen_posts_custom_column', 'custom_multivitaminen_column', 10, 2);
+function custom_multivitaminen_column($column, $post_id)
+{
+  switch ($column) {
+    case 'vikiid':
+      echo get_field('viki_unique_id');
+  }
+}

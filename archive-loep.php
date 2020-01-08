@@ -22,13 +22,20 @@
 <section>
     <div class="container">
         <div class="row">
-            <div class="col-lg-3 col-md-3 sidebar">
+            <div class="col-lg-3 col-md-3 sidebar sidebar-loep">
                 <?php get_template_part('template-parts/content', 'adv'); ?>
-                <div class="inner si-in">
-                    <?php if (is_active_sidebar('loep')) {
-                        dynamic_sidebar('loep');
-                    } ?>
+                <button href="#" class="btn orderbtn openbtn">Introductie video</button>
+                <div class="popup">
+                    <div class="close"></div>
+                    <div class="innerpop">
+                        <?php if (is_active_sidebar('loep_boven')) {
+                            dynamic_sidebar('loep_boven');
+                        } ?>
+                    </div>
                 </div>
+                <?php if (is_active_sidebar('loep')) {
+                    dynamic_sidebar('loep');
+                } ?>
             </div>
             <div class="col-lg-9 col-md-9">
                 <div class="row">
@@ -69,3 +76,13 @@
 </section>
 
 <?php get_footer(); ?>
+
+<script>
+    // Video
+    jQuery('.openbtn').on('click', function() {
+        jQuery('.popup').addClass('open');
+    });
+    jQuery('.popup .close').on('click', function() {
+        jQuery('.popup').removeClass('open');
+    });
+</script>

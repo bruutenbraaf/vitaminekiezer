@@ -40,7 +40,6 @@
         });
     </script>
 <?php endif; ?>
-
 <?php if (have_rows('builder')) : ?>
     <?php while (have_rows('builder')) : the_row(); ?>
         <?php if (get_row_layout() == 'intro_tekst') : ?>
@@ -89,12 +88,23 @@
             <section id="feedback">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-8 offset-md-2 feedback">
+                        <div class="col-md-9 feedback">
                             <div class="inner">
                                 <div class="row">
                                     <div class="col-md-12">
                                         <h3><?php the_sub_field('titel'); ?></h3>
                                         <?php the_sub_field('content'); ?>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 feedback">
+                            <div class="inner">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <?php if (is_active_sidebar('verlijker_onder')) {
+                                            dynamic_sidebar('verlijker_onder');
+                                        } ?>
                                     </div>
                                 </div>
                             </div>

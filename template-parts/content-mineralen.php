@@ -1,10 +1,10 @@
 
 <div class="ingredient">
     <div class="i-titel">Mineralen
-        <?php if (get_field('vitamines', 'option')) { ?>
+        <?php if (get_field('mineralen_uitleg', 'option')) { ?>
             <div class="i">
                 <div class="i-u">
-                    <?php the_field('vitamines', 'option'); ?>
+                    <?php the_field('mineralen_uitleg', 'option'); ?>
                 </div>
             </div>
         <?php } ?>

@@ -21,11 +21,11 @@
             <div class="main-nav">
                 <?php wp_nav_menu(array('theme_location' => 'main_menu')); ?>
             </div>
-            <div class="hamburger">
+            <button class="hamburger">
                 <div></div>
                 <div></div>
                 <div></div>
-            </div>
+            </button>
         </div>
     </div>
 </nav>

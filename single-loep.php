@@ -3,7 +3,7 @@
 <section id="content">
 <div class="container">
         <div class="row">
-            <div class="col-lg-3 col-md-3 sidebar">
+            <div class="col-lg-3 col-md-3 sidebar sidebar-loep">
                 <?php get_template_part( 'template-parts/content', 'adv' ); ?>
                 <div class="inner si-in">
                     <?php if(is_active_sidebar('loep')){

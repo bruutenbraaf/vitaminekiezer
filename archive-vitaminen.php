@@ -132,7 +132,7 @@
                                                 <div class="col-12">
                                                     <a href="<?php the_permalink(); ?>">
                                                         <?php $productafbeelding = get_sub_field('productafbeelding'); ?>
-                                                        <div class="product-image" <?php if ($productafbeelding) { ?>style="background-image:url(<?php echo $productafbeelding['url']; ?>);" <?php } ?>>
+                                                        <div class="product-image" style="background-image:url(<?php echo get_the_post_thumbnail_url($post, 'medium'); ?>);">
                                                         </div>
                                                     </a>
                                                 </div>
