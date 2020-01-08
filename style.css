@@ -286,15 +286,6 @@ nav .main-nav ul li a {
     padding: 0px 10px;
 }
 
-nav .main-nav ul li a:hover {
-    text-decoration: none;
-    color: #D93A3A;
-}
-
-.current-menu-item a {
-    color: #D93A3A !important;
-}
-
 nav .the_nav .row {
     margin-left: 0px;
     margin-right: 0px;
@@ -302,6 +293,15 @@ nav .the_nav .row {
 
 .hamburger {
     display: none;
+}
+
+nav .main-nav ul li a:hover {
+    text-decoration: none;
+    color: #D93A3A;
+}
+
+.current-menu-item a {
+    color: #D93A3A !important;
 }
 
 /* Carousel */
