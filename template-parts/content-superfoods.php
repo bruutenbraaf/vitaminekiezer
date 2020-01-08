@@ -394,6 +394,13 @@
                 </div>
             </li>
         <?php } ?>
+        <?php if (get_field('rozemarijn_superfoods')) { ?>
+            <li>
+                <div class="row">
+                    <div class="col"><span class="it-title">Rozemarijn</span><span class="it-waarde"><?php the_field('rozemarijn_superfoods'); ?></span></div>
+                </div>
+            </li>
+        <?php } ?>
         <?php if (get_field('tarwegras_gerstegras')) { ?>
             <li>
                 <div class="row">

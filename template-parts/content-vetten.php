@@ -75,14 +75,14 @@
         <?php if (get_field('lecithine_mg')) { ?>
             <li>
                 <div class="row">
-                    <div class="col"><span class="it-title">Lecithine</span><span class="it-waarde"><?php the_field('lecithine_mg'); ?></span></div>
+                    <div class="col"><span class="it-title">Lecithine, Choline & fosfatidylcholine</span><span class="it-waarde"><?php the_field('lecithine_mg'); ?></span></div>
                 </div>
             </li>
         <?php } ?>
         <?php if (get_field('visolie__muv_omega_3_vetzuren')) { ?>
             <li>
                 <div class="row">
-                    <div class="col"><span class="it-title">Visolie m.u.v. Omega 3 vetzuren</span><span class="it-waarde"><?php the_field('visolie__muv_omega_3_vetzuren'); ?></span></div>
+                    <div class="col"><span class="it-title">Visolie vetzuren zonder omega-3</span><span class="it-waarde"><?php the_field('visolie__muv_omega_3_vetzuren'); ?></span></div>
                 </div>
             </li>
         <?php } ?>
@@ -96,7 +96,7 @@
         <?php if (get_field('zonnebloem_fosfolipiden')) { ?>
             <li>
                 <div class="row">
-                    <div class="col"><span class="it-title">Zonnebloem fosfolipiden</span><span class="it-waarde"><?php the_field('zonnebloem_fosfolipiden'); ?></span></div>
+                    <div class="col"><span class="it-title">Fosfolipiden & Fosfatidylserine</span><span class="it-waarde"><?php the_field('zonnebloem_fosfolipiden'); ?></span></div>
                 </div>
             </li>
         <?php } ?>

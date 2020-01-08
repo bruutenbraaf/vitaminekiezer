@@ -12,14 +12,14 @@
         <?php if (get_field('astaxanthine_een_carotenoide_e161')) { ?>
             <li>
                 <div class="row">
-                    <div class="col"><span class="it-title">Astaxanthine (een carotenoide, E161: uit microalgen, gist, zalm, forel, krill, garnaal, kreeft, krab, kreeftachtigen)</span><span class="it-waarde"><?php the_field('astaxanthine_een_carotenoide_e161'); ?></span></div>
+                    <div class="col"><span class="it-title">Astaxanthine uit algen, vis of schaaldieren</span><span class="it-waarde"><?php the_field('astaxanthine_een_carotenoide_e161'); ?></span></div>
                 </div>
             </li>
         <?php } ?>
         <?php if (get_field('chlorella_pyrenoidosa_gebroken_celwand')) { ?>
             <li>
                 <div class="row">
-                    <div class="col"><span class="it-title">Chlorella pyrenoidosa (gebroken celwand)</span><span class="it-waarde"><?php the_field('chlorella_pyrenoidosa_gebroken_celwand'); ?></span></div>
+                    <div class="col"><span class="it-title">Chlorella pyrenoidosa</span><span class="it-waarde"><?php the_field('chlorella_pyrenoidosa_gebroken_celwand'); ?></span></div>
                 </div>
             </li>
         <?php } ?>
@@ -47,7 +47,7 @@
         <?php if (get_field('lithothamnium_calcareum_rode_alg_kalkhoudens_zeewier')) { ?>
             <li>
                 <div class="row">
-                    <div class="col"><span class="it-title">Lithothamnium calcareum (rode alg, kalkhoudens zeewier)</span><span class="it-waarde"><?php the_field('lithothamnium_calcareum_rode_alg_kalkhoudens_zeewier'); ?></span></div>
+                    <div class="col"><span class="it-title">Lithothamnium calcareum,rode alg, kalkhoudend zeewier</span><span class="it-waarde"><?php the_field('lithothamnium_calcareum_rode_alg_kalkhoudens_zeewier'); ?></span></div>
                 </div>
             </li>
         <?php } ?>
