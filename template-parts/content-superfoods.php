@@ -275,13 +275,6 @@
                 </div>
             </li>
         <?php } ?>
-        <?php if (get_field('limoneen_citrus_poeder_extract')) { ?>
-            <li>
-                <div class="row">
-                    <div class="col"><span class="it-title">Limoneen (citrus) poeder extract</span><span class="it-waarde"><?php the_field('limoneen_citrus_poeder_extract'); ?></span></div>
-                </div>
-            </li>
-        <?php } ?>
         <?php if (get_field('luteine_en_carotenoide')) { ?>
             <li>
                 <div class="row">
@@ -352,13 +345,6 @@
                 </div>
             </li>
         <?php } ?>
-        <?php if (get_field('polyfenolen')) { ?>
-            <li>
-                <div class="row">
-                    <div class="col"><span class="it-title">Polyfenolen</span><span class="it-waarde"><?php the_field('polyfenolen'); ?></span></div>
-                </div>
-            </li>
-        <?php } ?>
         <?php if (get_field('prunus_africana')) { ?>
             <li>
                 <div class="row">
@@ -415,13 +401,6 @@
                 </div>
             </li>
         <?php } ?>
-        <?php if (get_field('tocoferolen_gemengde_natuurlijke')) { ?>
-            <li>
-                <div class="row">
-                    <div class="col"><span class="it-title">Tocoferolen, gemengde natuurlijke</span><span class="it-waarde"><?php the_field('tocoferolen_gemengde_natuurlijke'); ?></span></div>
-                </div>
-            </li>
-        <?php } ?>
         <?php if (get_field('sarsaparilla_smilax_officinalis')) { ?>
             <li>
                 <div class="row">
@@ -454,13 +433,6 @@
             <li>
                 <div class="row">
                     <div class="col"><span class="it-title">Zeaxanthine</span><span class="it-waarde"><?php the_field('zeaxanthine'); ?></span></div>
-                </div>
-            </li>
-        <?php } ?>
-        <?php if (get_field('zegepalm')) { ?>
-            <li>
-                <div class="row">
-                    <div class="col"><span class="it-title">Zegepalm</span><span class="it-waarde"><?php the_field('zegepalm'); ?></span></div>
                 </div>
             </li>
         <?php } ?>
