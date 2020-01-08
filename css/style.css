@@ -344,3 +344,12 @@
   opacity: 1;
   pointer-events: none;
 }
+
+nav .main-nav ul li a:hover {
+  text-decoration: none;
+  color: #D93A3A;
+}
+
+.current-menu-item a {
+  color: #D93A3A !important;
+}
