@@ -965,9 +965,15 @@ footer ul.menu li:hover:after {
   background: #ffffff;
 }
 
-.filters .inner input[type="submit"], .search-filter-reset {
+.filters .inner input[type="submit"] {
   margin-left: 15px;
   margin-bottom: 15px;
+}
+
+.search-filter-reset {
+  margin-left: 15px;
+  margin-bottom: 20px;
+  display: inline-table;
 }
 
 .searchandfilter ul li li {
