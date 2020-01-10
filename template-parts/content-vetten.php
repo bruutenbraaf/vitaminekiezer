@@ -1,5 +1,5 @@
 <div class="ingredient junior">
-    <div class="i-titel">Vetten
+    <div class="i-titel">Veten
         <?php if (get_field('vetten_vetzuren_lipiden', 'option')) { ?>
             <div class="i">
                 <div class="i-u">
