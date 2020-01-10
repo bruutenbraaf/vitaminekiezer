@@ -93,7 +93,7 @@
                                 'post_type' => 'post',
                                 'order' => 'ASC',
                             );
-                            $args['search_filter_id'] = 1203;
+                            $args['search_filter_id'] = 3449;
                             $query = new WP_Query($args);
                             $total = $query->found_posts;
                             ?>
