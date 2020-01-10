@@ -76,7 +76,7 @@
                                     </div>
                                     <div class="inner">
                                         <div class="widget">
-                                            <?php echo do_shortcode('[searchandfilter id="1203"]'); ?>
+                                            <?php echo do_shortcode('[searchandfilter id="3449"]'); ?>
                                         </div>
                                     </div>
                                 </div>
