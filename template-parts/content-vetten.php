@@ -1,5 +1,5 @@
 <div class="ingredient junior">
-    <div class="i-titel">Veten
+    <div class="i-titel">Vetten
         <?php if (get_field('vetten_vetzuren_lipiden', 'option')) { ?>
             <div class="i">
                 <div class="i-u">
@@ -104,6 +104,70 @@
             <li>
                 <div class="row">
                     <div class="col"><span class="it-title">Triglyceriden</span><span class="it-waarde"><?php the_field('triglyceriden'); ?></span></div>
+                </div>
+            </li>
+        <?php } ?>
+        <?php if (get_field('totaal_omega-3')) { ?>
+            <div class="extra-col"><u>Totaal omega 3:</u> <span class="extra-result"><?php the_field('totaal_omega-3'); ?></span>
+            </div>
+        <?php } ?>
+        <?php if (get_field('omega-3_ongespecificeerd')) { ?>
+            <li>
+                <div class="row">
+                    <div class="col"><span class="it-title">Omega 3 ongespecificeerd</span><span class="it-waarde"><?php the_field('omega-3_ongespecificeerd'); ?></span></div>
+                </div>
+            </li>
+        <?php } ?>
+        <?php if (get_field('dpa_docosapentateenzuur')) { ?>
+            <li>
+                <div class="row">
+                    <div class="col"><span class="it-title">DPA docosapentateenzuur</span><span class="it-waarde"><?php the_field('dpa_docosapentateenzuur'); ?></span></div>
+                </div>
+            </li>
+        <?php } ?>
+        <?php if (get_field('algenolie_schizochytrium_sp')) { ?>
+            <li>
+                <div class="row">
+                    <div class="col"><span class="it-title">Algenolie schizochytrium SP</span><span class="it-waarde"><?php the_field('algenolie_schizochytrium_sp'); ?></span></div>
+                </div>
+            </li>
+        <?php } ?>
+        <?php if (get_field('totaal_vetzuren_geen_omega-3')) { ?>
+            <div class="extra-col"><u>Totaal vetzuren geen omega 3:</u> <span class="extra-result"><?php the_field('totaal_vetzuren_geen_omega-3'); ?></span>
+            </div>
+        <?php } ?>
+        <?php if (get_field('overige_vetzuren_zoals_omega')) { ?>
+            <li>
+                <div class="row">
+                    <div class="col"><span class="it-title">Overige vetzuren zoals omega 6,7 & 9</span><span class="it-waarde"><?php the_field('overige_vetzuren_zoals_omega'); ?></span></div>
+                </div>
+            </li>
+        <?php } ?>
+        <?php if (get_field('teunisbloemolie_oenothera_biennis_l')) { ?>
+            <li>
+                <div class="row">
+                    <div class="col"><span class="it-title">Teunisbloemolie (Oenothera biennis L.)</span><span class="it-waarde"><?php the_field('teunisbloemolie_oenothera_biennis_l'); ?></span></div>
+                </div>
+            </li>
+        <?php } ?>
+        <?php if (get_field('arachide_olie_aa')) { ?>
+            <li>
+                <div class="row">
+                    <div class="col"><span class="it-title">Arachide Olie (AA)</span><span class="it-waarde"><?php the_field('arachide_olie_aa'); ?></span></div>
+                </div>
+            </li>
+        <?php } ?>
+        <?php if (get_field('olijfolie_olea_europaea')) { ?>
+            <li>
+                <div class="row">
+                    <div class="col"><span class="it-title">Olijfolie (Olea europaea)</span><span class="it-waarde"><?php the_field('olijfolie_olea_europaea'); ?></span></div>
+                </div>
+            </li>
+        <?php } ?>
+        <?php if (get_field('kokosolie_oleum_cocos')) { ?>
+            <li>
+                <div class="row">
+                    <div class="col"><span class="it-title">Kokosolie (Oleum cocos)</span><span class="it-waarde"><?php the_field('kokosolie_oleum_cocos'); ?></span></div>
                 </div>
             </li>
         <?php } ?>
