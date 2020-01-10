@@ -309,6 +309,8 @@ nav .main-nav ul li a:hover {
 }
 
 .nieuw:after {
+    position: relative;
+    left: 0px;
     content: 'Nieuw!';
     border-radius: 999px;
     background: #D93A3A;
@@ -316,7 +318,8 @@ nav .main-nav ul li a:hover {
     font-size: 10px;
     padding: 2px 9px;
     color: #ffff;
-    top: -6px;
+    top: -2px;
+    font-weight: 600;
 }
 
 /* Carousel */
