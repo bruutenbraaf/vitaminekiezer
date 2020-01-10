@@ -304,6 +304,21 @@ nav .main-nav ul li a:hover {
     color: #D93A3A !important;
 }
 
+.nieuw {
+    position: relative;
+}
+
+.nieuw:after {
+    content: 'Nieuw!';
+    border-radius: 999px;
+    background: #D93A3A;
+    right: -44px;
+    font-size: 10px;
+    padding: 2px 9px;
+    color: #ffff;
+    top: -6px;
+}
+
 /* Carousel */
 
 .scores-vergelijker tr:nth-child(2) td {
