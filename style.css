@@ -965,7 +965,7 @@ footer ul.menu li:hover:after {
   background: #ffffff;
 }
 
-.filters .inner input[type="submit"] {
+.filters .inner input[type="submit"], .search-filter-reset {
   margin-left: 15px;
   margin-bottom: 15px;
 }
