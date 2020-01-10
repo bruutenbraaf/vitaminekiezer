@@ -891,8 +891,6 @@ footer ul.menu li:hover:after {
 }
 
 .sf-field-reset {
-    bottom: -60px;
-    position: absolute;
     width: 100%;
     padding: 0px !important;
     background: transparent!important;
@@ -949,8 +947,8 @@ footer ul.menu li:hover:after {
     transform: translateY(-50%);
 }
 
-.searchandfilter {
-    margin-bottom: 80px;
+.filters .inner {
+    
 }
 
 .searchandfilter ul li li {
