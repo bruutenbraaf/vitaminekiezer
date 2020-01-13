@@ -109,7 +109,7 @@ get_header(); ?>
                 <?php
                 $vitamines = get_vitamines();
                 $loop = new WP_Query(array(
-                    'post_type' => array('multivitaminen', 'mineralen', 'vitaminen'),
+                    'post_type' => array('multivitaminen', 'omega_vetzuren', 'vitaminen'),
                     'post__in' => $vitamines,
                     'posts_per_page' => -1,
                     'order' => 'DESC'
