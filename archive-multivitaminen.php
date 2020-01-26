@@ -155,24 +155,24 @@
                             <?php endwhile; ?>
                             <?php wp_reset_postdata(); ?>
                         <?php endif; ?>
-				        <section id="pagination">
-				            <div class="pagination d-flex justify-content-center align-items-center">
-				                <a href="<?php echo get_home_url(); ?>/vergelijker/" class="back btn mobile-btn">Naar vergelijker</a>
-				                <?php echo paginate_links(array(
-				                    'prev_text' => '
+                        <section id="pagination">
+                            <div class="pagination d-flex justify-content-center align-items-center">
+                                <a href="<?php echo get_home_url(); ?>/vergelijker/" class="back btn mobile-btn">Naar vergelijker</a>
+                                <?php echo paginate_links(array(
+                                    'prev_text' => '
 				        <span class="prev">
 				            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
 				            <path d="M9.19719 14.9731L8.40442 15.7525C8.06874 16.0826 7.52595 16.0826 7.19384 15.7525L0.251758 8.93032C-0.0839192 8.60027 -0.0839192 8.06657 0.251758 7.74003L7.19384 0.914286C7.52952 0.584235 8.07231 0.584235 8.40442 0.914286L9.19719 1.69377C9.53644 2.02733 9.52929 2.57156 9.1829 2.8981L4.87981 6.92894H15.143C15.6179 6.92894 16 7.30464 16 7.77163V8.8952C16 9.36219 15.6179 9.73789 15.143 9.73789H4.87981L9.1829 13.7687C9.53286 14.0953 9.54001 14.6395 9.19719 14.9731Z" fill="black"/>
 				            </svg>        
 				        </span>',
-				                    'next_text' => '<span class="next"> 
+                                    'next_text' => '<span class="next"> 
 				            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
 				            <path d="M6.80281 14.9731L7.59558 15.7525C7.93126 16.0826 8.47405 16.0826 8.80616 15.7525L15.7482 8.93032C16.0839 8.60027 16.0839 8.06657 15.7482 7.74003L8.80616 0.914286C8.47048 0.584235 7.92769 0.584235 7.59558 0.914286L6.80281 1.69377C6.46356 2.02733 6.47071 2.57156 6.8171 2.8981L11.1202 6.92894H0.857047C0.3821 6.92894 0 7.30464 0 7.77163V8.8952C0 9.36219 0.3821 9.73789 0.857047 9.73789H11.1202L6.8171 13.7687C6.46714 14.0953 6.45999 14.6395 6.80281 14.9731Z" fill="black"/>
 				            </svg>            
 				        </span>'
-				                )); ?>
-				            </div>
-				        </section>
+                                )); ?>
+                            </div>
+                        </section>
                     </div>
                 </div>
             </div>
@@ -238,4 +238,75 @@
     //     }
     // });
 </script>
+
+
+<?php $product_placeholder = get_field('product_placeholder', 'option'); ?>
+<div class="viki-results">
+    <?php
+    $vitamines = get_vitamines();
+    $loop = new WP_Query(array(
+        'post_type' => array('multivitaminen'),
+        'post__in' => $vitamines,
+        'posts_per_page' => -1,
+        'order' => 'DESC'
+    )); ?>
+    <?php if ($loop->have_posts()) : ?>
+        <?php $count = 0; ?>
+        <div class="in-results">
+            <?php while ($loop->have_posts()) : $loop->the_post(); ?>
+                <?php $count++ ?>
+                <div class="item">
+                    <div class="inner">
+                        <div class="row productinfo">
+                            <?php $logo = get_field('logo_header'); ?>
+                            <div class="col-6 logo-product">
+                                <?php if ($logo) { ?>
+                                    <img src="<?php echo $logo; ?>" />
+                                <?php } else { ?>
+                                    <span class="product-merk"><?php the_field('merk_header'); ?></span>
+                                <?php } ?>
+                            </div>
+                            <div class="col-6">
+                                <div class="a-score">
+                                    <span class="the_score"><?php the_field('kwaliteit_score_header'); ?></span>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <a href="<?php the_permalink(); ?>">
+                                    <?php $productafbeelding = get_the_post_thumbnail_url('', 'medium'); ?>
+                                    <?php $product_placeholder = get_field('product_placeholder', 'option'); ?>
+                                    <div class="product-image" style="background-image:url( <?php if ($productafbeelding) { ?> <?php echo $productafbeelding; ?> <?php } else { ?> <?php echo $product_placeholder['url']; ?> <?php } ?>);">
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-9">
+                                <a href="<?php the_permalink(); ?>">
+                                    <span class="product-title"><?php the_title(); ?></span>
+                                </a>
+                            </div>
+                            <div class="col-3">
+                                <?php echo do_shortcode('[add_vitamine]'); ?>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <?php endwhile; ?>
+        </div>
+        <?php $vergelijker_pagina = get_field('vergelijker_pagina', 'option'); ?>
+        <?php if ($vergelijker_pagina) { ?>
+            <a href="<?php echo $vergelijker_pagina['url']; ?>" target="<?php echo $vergelijker_pagina['target']; ?>">
+                <div class="vitamin-widget">
+                    <div class="count">
+                        <?php echo $count; ?>
+                    </div>
+                    <?php _e('In vergelijker', 'viki'); ?>
+                </div>
+            </a>
+        <?php } ?>
+        <?php wp_reset_postdata(); ?>
+    <?php endif; ?>
+</div>
+
+
 <?php get_footer(); ?>
