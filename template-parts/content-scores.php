@@ -10,7 +10,7 @@
                             <div class="the-bar">
                                 <div class="bar-score" style="width:<?php $type = get_sub_field('algemene_score');
                                                                     $type = str_replace(str_split('\\/:*?"<>|.,'), '', $type);
-                                                                    echo $type; ?>%;">
+                                                                    echo $type; ?>0%;">
                                 </div>
                             </div>
                         </td>
@@ -28,7 +28,7 @@
                     <div class="the-bar">
                         <div class="bar-score" style="width:<?php $type = get_field('kwaliteit_score_header');
                                                             $type = str_replace(str_split('\\/:*?"<>|.,'), '', $type);
-                                                            echo $type; ?>%;">
+                                                            echo $type; ?>0%;">
                         </div>
                     </div>
                 </td>
@@ -45,7 +45,7 @@
                     <div class="the-bar">
                         <div class="bar-score" style="width:<?php $type = get_field('compleetheid');
                                                             $type = str_replace(str_split('\\/:*?"<>|.,'), '', $type);
-                                                            echo $type; ?>%;">
+                                                            echo $type; ?>0%;">
                         </div>
                     </div>
                 </td>
@@ -62,7 +62,7 @@
                     <div class="the-bar">
                         <div class="bar-score" style="width:<?php $type = get_field('dosering');
                                                             $type = str_replace(str_split('\\/:*?"<>|.,'), '', $type);
-                                                            echo $type; ?>%;">
+                                                            echo $type; ?>0%;">
                         </div>
                     </div>
                 </td>
@@ -79,7 +79,7 @@
                     <div class="the-bar">
                         <div class="bar-score" style="width:<?php $type = get_field('effectiviteit');
                                                             $type = str_replace(str_split('\\/:*?"<>|.,'), '', $type);
-                                                            echo $type; ?>%;">
+                                                            echo $type; ?>0%;">
                         </div>
                     </div>
                 </td>
@@ -96,7 +96,7 @@
                     <div class="the-bar">
                         <div class="bar-score" style="width:<?php $type = get_field('veiligheid');
                                                             $type = str_replace(str_split('\\/:*?"<>|.,'), '', $type);
-                                                            echo $type; ?>%;">
+                                                            echo $type; ?>0%;">
                         </div>
                     </div>
                 </td>
@@ -113,7 +113,7 @@
                     <div class="the-bar">
                         <div class="bar-score" style="width:<?php $type = get_field('kwaliteit_productie_en_productinformatie_');
                                                             $type = str_replace(str_split('\\/:*?"<>|.,'), '', $type);
-                                                            echo $type; ?>%;">
+                                                            echo $type; ?>0%;">
                         </div>
                     </div>
                 </td>
