@@ -48,6 +48,5 @@
 </head>
 
 <body <?php body_class(); ?>>
-<div class="update">Momenteel voeren wij updates uit, hierdoor kan Vitaminekiezer soms niet werken.</div>
 
     <?php get_template_part('template-parts/content', 'menu'); ?>
