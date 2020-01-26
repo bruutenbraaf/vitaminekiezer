@@ -24,7 +24,7 @@
                     } ?>
                 </div>
                 <div class="col-md-4 d-flex justify-content-end p-2 desktop-btn">
-                    <a href="<?php echo get_site_url() ?>/vergelijker/" class="back btn compare">Naar vergelijker</a>
+                    <a href="<?php echo get_site_url() ?>/vergelijker-omega/" class="back btn compare">Naar vergelijker</a>
                 </div>
             </div>
         </div>
@@ -298,7 +298,7 @@
         </div>
         <?php $vergelijker_pagina = get_field('vergelijker_pagina', 'option'); ?>
         <?php if ($vergelijker_pagina) { ?>
-            <a href="<?php echo $vergelijker_pagina['url']; ?>" target="<?php echo $vergelijker_pagina['target']; ?>">
+            <a href="<?php echo get_home_url(); ?>/vergelijker-omega/">
                 <div class="vitamin-widget">
                     <div class="count">
                         <?php echo $count; ?>
