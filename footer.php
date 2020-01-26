@@ -1,4 +1,3 @@
-<?php get_template_part('template-parts/content', 'count'); ?>
 <footer>
     <div class="container">
         <div class="row">

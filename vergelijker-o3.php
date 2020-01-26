@@ -1,6 +1,6 @@
 <?php
 
-// Template name: Vergelijker
+// Template name: o3
 
 get_header(); ?>
 
@@ -30,7 +30,7 @@ get_header(); ?>
                 } ?>
             </div>
             <div class="col-md-4 d-flex justify-content-end p-2">
-                <a href="<?php echo get_home_url(); ?>/multivitaminen-en-mineralen" class="back btn">Naar overzicht</a>
+                <a href="<?php echo get_home_url(); ?>/omega-vetzuren/" class="back btn">Naar overzicht</a>
             </div>
         </div>
     </div>
@@ -43,7 +43,7 @@ get_header(); ?>
                 <?php
                 $vitamines = get_vitamines();
                 $loop = new WP_Query(array(
-                    'post_type' => array('multivitaminen', 'omega_vetzuren', 'vitaminen'),
+                    'post_type' => array('omega_vetzuren'),
                     'post__in' => $vitamines,
                     'posts_per_page' => -1,
                     'order' => 'DESC'
