@@ -24,7 +24,7 @@
                     } ?>
                 </div>
                 <div class="col-md-4 d-flex justify-content-end p-2 desktop-btn">
-                    <a href="<?php echo get_site_url() ?>/vergelijker-multivitaminen/">" class="back btn compare">Naar vergelijker</a>
+                    <a href="<?php echo get_site_url() ?>/vergelijker-multivitaminen/" class="back btn compare">Naar vergelijker</a>
                 </div>
             </div>
         </div>
