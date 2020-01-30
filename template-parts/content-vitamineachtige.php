@@ -1,5 +1,5 @@
 <div class="ingredient junior">
-    <div class="i-titel">Vitamine-achtige extra ingredienten
+    <div class="i-titel">Vitamine-achtige stoffen
         <?php if (get_field('vitamine-achtige_extra_ingredienten_uitleg', 'option')) { ?>
             <div class="i">
                 <div class="i-u">
