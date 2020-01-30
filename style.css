@@ -1088,7 +1088,7 @@ footer ul.menu li:hover:after {
   z-index: 100000;
 }
 .popupreview {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.9);
 }
 
 .popup.open,

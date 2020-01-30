@@ -18,15 +18,23 @@
 <script>
     jQuery(document).ready(function() {
         if ('set' !== jQuery.cookie('review-pop')) {
-            jQuery('.popupreview').addClass('open');
+            setTimeout(function() {
+                jQuery('.popupreview').addClass('open');
+            }, <?php echo $tijd * 1000; ?>);
         }
         jQuery('.closereview').on('click', function() {
             jQuery('.popupreview').removeClass('open');
-            jQuery.cookie('review-pop', 'set', { expires: 7, path: '/' });
+            jQuery.cookie('review-pop', 'set', {
+                expires: 7,
+                path: '/'
+            });
         });
         jQuery('.closebtn').on('click', function() {
             jQuery('.popupreview').removeClass('open');
-            jQuery.cookie('review-pop', 'set', { expires: 7, path: '/' });
+            jQuery.cookie('review-pop', 'set', {
+                expires: 7,
+                path: '/'
+            });
         });
     });
 </script>
