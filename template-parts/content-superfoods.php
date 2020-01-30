@@ -58,6 +58,13 @@
                 </div>
             </li>
         <?php } ?>
+        <?php if (get_field('aloe_vera')) { ?>
+            <li>
+                <div class="row">
+                    <div class="col"><span class="it-title">Aloë Vera</span><span class="it-waarde"><?php the_field('aloe_vera'); ?></span></div>
+                </div>
+            </li>
+        <?php } ?>
         <?php if (get_field('bamboe-extract')) { ?>
             <li>
                 <div class="row">
@@ -68,7 +75,7 @@
         <?php if (get_field('bioflavonoiden_oa_citrus_hesperidine_acerolabessen')) { ?>
             <li>
                 <div class="row">
-                    <div class="col"><span class="it-title">Citrus,  Bioflavonoïdencomplex, hesperidine (ook acerolabessen), Limoneen</span><span class="it-waarde"><?php the_field('bioflavonoiden_oa_citrus_hesperidine_acerolabessen'); ?></span></div>
+                    <div class="col"><span class="it-title">Citrus, Bioflavonoïdencomplex, hesperidine (ook acerolabessen), Limoneen</span><span class="it-waarde"><?php the_field('bioflavonoiden_oa_citrus_hesperidine_acerolabessen'); ?></span></div>
                 </div>
             </li>
         <?php } ?>
@@ -104,6 +111,13 @@
             <li>
                 <div class="row">
                     <div class="col"><span class="it-title">Ananas (Ananas comosus), Bromelaine</span><span class="it-waarde"><?php the_field('bromalaine_ananas_comosus'); ?></span></div>
+                </div>
+            </li>
+        <?php } ?>
+        <?php if (get_field('koffieplant_cafeine')) { ?>
+            <li>
+                <div class="row">
+                    <div class="col"><span class="it-title">koffieplant_cafeine</span><span class="it-waarde"><?php the_field('koffieplant_cafeine'); ?></span></div>
                 </div>
             </li>
         <?php } ?>
@@ -285,7 +299,7 @@
         <?php if (get_field('lycopeen__lycopersicon_esculentum_miller__tomaat')) { ?>
             <li>
                 <div class="row">
-                    <div class="col"><span class="it-title">Tomaat (Lycopersicon esculentum  Miller), Lycopeen</span><span class="it-waarde"><?php the_field('lycopeen__lycopersicon_esculentum_miller__tomaat'); ?></span></div>
+                    <div class="col"><span class="it-title">Tomaat (Lycopersicon esculentum Miller), Lycopeen</span><span class="it-waarde"><?php the_field('lycopeen__lycopersicon_esculentum_miller__tomaat'); ?></span></div>
                 </div>
             </li>
         <?php } ?>
@@ -432,7 +446,7 @@
         <?php if (get_field('zaagpalm_serenosa_repens')) { ?>
             <li>
                 <div class="row">
-                    <div class="col"><span class="it-title">Zaagpalm (serenosa repens)</span><span class="it-waarde"><?php the_field('zaagpalm_serenosa_repens'); ?></span></div>
+                    <div class="col"><span class="it-title">Zaagpalm, Zegepalm (Serenosa repens)</span><span class="it-waarde"><?php the_field('zaagpalm_serenosa_repens'); ?></span></div>
                 </div>
             </li>
         <?php } ?>
@@ -473,5 +487,3 @@
         <?php } ?>
     </ul>
 </div>
-
-

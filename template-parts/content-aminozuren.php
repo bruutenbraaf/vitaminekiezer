@@ -9,13 +9,6 @@
         <?php } ?>
     </div>
     <ul>
-        <?php if (get_field('acetyl-l-carnitine')) { ?>
-            <li>
-                <div class="row">
-                    <div class="col"><span class="it-title">Acetyl-l-carnitine </span><span class="it-waarde"><?php the_field('acetyl-l-carnitine'); ?></span></div>
-                </div>
-            </li>
-        <?php } ?>
         <?php if (get_field('l-alanine')) { ?>
             <li>
                 <div class="row">
@@ -23,6 +16,29 @@
                 </div>
             </li>
         <?php } ?>
+    
+        <?php if (get_field('l-arginine')) { ?>
+            <li>
+                <div class="row">
+                    <div class="col"><span class="it-title">l-Arginine</span><span class="it-waarde"><?php the_field('l-arginine'); ?></span></div>
+                </div>
+            </li>
+        <?php } ?>
+        <?php if (get_field('l-asparaginezuur')) { ?>
+            <li>
+                <div class="row">
+                    <div class="col"><span class="it-title">l-Asparaginezuur</span><span class="it-waarde"><?php the_field('l-asparaginezuur'); ?></span></div>
+                </div>
+            </li>
+        <?php } ?>
+        <?php if (get_field('l-cystine')) { ?>
+            <li>
+                <div class="row">
+                    <div class="col"><span class="it-title">l-Cystine</span><span class="it-waarde"><?php the_field('l-cystine'); ?></span></div>
+                </div>
+            </li>
+        <?php } ?>
+
         <?php if (get_field('alfa_liponzuur')) { ?>
             <li>
                 <div class="row">
@@ -79,6 +95,22 @@
                 </div>
             </li>
         <?php } ?>
+
+        <?php if (get_field('l-hystidine')) { ?>
+            <li>
+                <div class="row">
+                    <div class="col"><span class="it-title">l-Hystidine</span><span class="it-waarde"><?php the_field('l-hystidine'); ?></span></div>
+                </div>
+            </li>
+        <?php } ?>
+        <?php if (get_field('l-isoleucine')) { ?>
+            <li>
+                <div class="row">
+                    <div class="col"><span class="it-title">l-Isoleucine</span><span class="it-waarde"><?php the_field('l-isoleucine'); ?></span></div>
+                </div>
+            </li>
+        <?php } ?>
+
         <?php if (get_field('l-leucine')) { ?>
             <li>
                 <div class="row">
@@ -93,6 +125,43 @@
                 </div>
             </li>
         <?php } ?>
+
+        <?php if (get_field('l-methionine')) { ?>
+            <li>
+                <div class="row">
+                    <div class="col"><span class="it-title">l-Methionine</span><span class="it-waarde"><?php the_field('l-methionine'); ?></span></div>
+                </div>
+            </li>
+        <?php } ?>
+        <?php if (get_field('l-fenylalanine')) { ?>
+            <li>
+                <div class="row">
+                    <div class="col"><span class="it-title">l-Fenylalanine</span><span class="it-waarde"><?php the_field('l-fenylalanine'); ?></span></div>
+                </div>
+            </li>
+        <?php } ?>
+        <?php if (get_field('l-proline')) { ?>
+            <li>
+                <div class="row">
+                    <div class="col"><span class="it-title">l-Proline</span><span class="it-waarde"><?php the_field('l-proline'); ?></span></div>
+                </div>
+            </li>
+        <?php } ?>
+        <?php if (get_field('l-serine')) { ?>
+            <li>
+                <div class="row">
+                    <div class="col"><span class="it-title">l-Serine</span><span class="it-waarde"><?php the_field('l-serine'); ?></span></div>
+                </div>
+            </li>
+        <?php } ?>
+        <?php if (get_field('l-threonine')) { ?>
+            <li>
+                <div class="row">
+                    <div class="col"><span class="it-title">l-Threonine</span><span class="it-waarde"><?php the_field('l-threonine'); ?></span></div>
+                </div>
+            </li>
+        <?php } ?>
+        
         <?php if (get_field('melathonine')) { ?>
             <li>
                 <div class="row">
@@ -160,6 +229,20 @@
             <li>
                 <div class="row">
                     <div class="col"><span class="it-title">l-Tyrosine</span><span class="it-waarde"><?php the_field('l-tyrosine'); ?></span></div>
+                </div>
+            </li>
+        <?php } ?>
+        <?php if (get_field('l-valine')) { ?>
+            <li>
+                <div class="row">
+                    <div class="col"><span class="it-title">l-Valine</span><span class="it-waarde"><?php the_field('l-valine'); ?></span></div>
+                </div>
+            </li>
+        <?php } ?>
+        <?php if (get_field('acetyl-l-carnitine')) { ?>
+            <li>
+                <div class="row">
+                    <div class="col"><span class="it-title">Acetyl-l-carnitine </span><span class="it-waarde"><?php the_field('acetyl-l-carnitine'); ?></span></div>
                 </div>
             </li>
         <?php } ?>
