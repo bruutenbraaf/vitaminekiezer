@@ -18,9 +18,7 @@
 <script>
     jQuery(document).ready(function() {
         if ('set' !== jQuery.cookie('review-pop')) {
-            setTimeout(function() {
-                jQuery('.popupreview').addClass('open');
-            }, <?php echo $tijd * 1000; ?>);
+            jQuery('.popupreview').delay(2000).addClass('open');
         }
         jQuery('.closereview').on('click', function() {
             jQuery('.popupreview').removeClass('open');
