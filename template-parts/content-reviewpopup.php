@@ -1,6 +1,6 @@
 <div class="popupreview">
     <div class="popupreviewbox">
-    	<div class="closereview"></div>
+        <div class="closereview"></div>
         <?php the_field('tekst', 'option'); ?>
         <?php $accepteren = get_field('accepteren', 'option'); ?>
         <?php if ($accepteren) { ?>
@@ -13,16 +13,19 @@
     </div>
 </div>
 
-<?php $tijd = get_field( 'tijd_tot_popup', 'option' ); ?> 
+<?php $tijd = get_field('tijd_tot_popup', 'option'); ?>
 
 <script>
-    setTimeout(function() {
-        jQuery('.popupreview').addClass('open');
-    }, <?php echo $tijd * 1000; ?>);
-    jQuery('.closereview').on('click', function() {
-        jQuery('.popupreview').removeClass('open');
-    });
-    jQuery('.closebtn').on('click', function() {
-        jQuery('.popupreview').removeClass('open');
+    jQuery(document).ready(function() {
+        if ('set' !== jQuery.cookie('review-pop')) {
+            jQuery('.popupreview').addClass('open');
+        }
+        jQuery('.closereview').on('click', function() {
+            jQuery('.popupreview').removeClass('open');
+            jQuery.cookie('review-pop', 'set', { expires: 7, path: '/' });
+        });
+        jQuery('.closebtn').on('click', function() {
+            jQuery('.popupreview').removeClass('open');
+        });
     });
 </script>
