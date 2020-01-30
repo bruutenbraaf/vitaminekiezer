@@ -26,6 +26,7 @@
         });
         jQuery('.closebtn').on('click', function() {
             jQuery('.popupreview').removeClass('open');
+            jQuery.cookie('review-pop', 'set', { expires: 7, path: '/' });
         });
     });
 </script>
