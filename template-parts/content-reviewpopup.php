@@ -12,9 +12,7 @@
         <?php } ?>
     </div>
 </div>
-
 <?php $tijd = get_field('tijd_tot_popup', 'option'); ?>
-
 <script>
     jQuery(document).ready(function() {
         if ('set' !== jQuery.cookie('review-pop')) {
