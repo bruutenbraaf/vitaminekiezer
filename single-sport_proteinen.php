@@ -24,7 +24,7 @@
                 </div>
             </div>
             <div class="col-md-6 btn-right">
-                <a href="<?php echo get_post_type_archive_link('multivitaminen'); ?>" class="btn v-btn"><?php _e('Terug naar overzicht'); ?></a>
+                <a href="<?php echo get_post_type_archive_link('sport_proteinen'); ?>" class="btn v-btn"><?php _e('Terug naar overzicht'); ?></a>
             </div>
             <div class="col-md-6">
                 <div class="row">
