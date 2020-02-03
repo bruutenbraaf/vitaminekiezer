@@ -380,10 +380,10 @@
                 </div>
             </li>
         <?php } ?>
-        <?php if (get_field('resveratrol')) { ?>
+        <?php if (get_field('japanse_duizendknoop_polygonum_cuspidatum_of_reynoutria_japonica_resveratrol')) { ?>
             <li>
                 <div class="row">
-                    <div class="col"><span class="it-title">Japanse duizendknoop (Polygonum cuspidatum of (Reynoutria japonica), Resveratrol</span><span class="it-waarde"><?php the_field('resveratrol'); ?></span></div>
+                    <div class="col"><span class="it-title">Japanse duizendknoop (Polygonum cuspidatum of (Reynoutria japonica), Resveratrol</span><span class="it-waarde"><?php the_field('japanse_duizendknoop_polygonum_cuspidatum_of_reynoutria_japonica_resveratrol'); ?></span></div>
                 </div>
             </li>
         <?php } ?>
