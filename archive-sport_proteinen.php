@@ -4,10 +4,10 @@
 
 <div class="header-page d-flex justify-content-center align-items-center">
     <div class="inner">
-        <h1><?php the_field('header_titel', 'option'); ?></h1>
-        <?php if (have_rows('usps', 'option')) : ?>
+        <h1><?php the_field('header_titel_pro', 'option'); ?></h1>
+        <?php if (have_rows('usps_pro', 'option')) : ?>
             <ul>
-                <?php while (have_rows('usps', 'option')) : the_row(); ?>
+                <?php while (have_rows('usps_pro', 'option')) : the_row(); ?>
                     <li> <?php the_sub_field('usp'); ?> </li>
                 <?php endwhile; ?>
             </ul>
