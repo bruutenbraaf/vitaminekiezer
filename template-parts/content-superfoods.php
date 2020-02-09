@@ -117,7 +117,7 @@
         <?php if (get_field('koffieplant_cafeine')) { ?>
             <li>
                 <div class="row">
-                    <div class="col"><span class="it-title">koffieplant_cafeine</span><span class="it-waarde"><?php the_field('koffieplant_cafeine'); ?></span></div>
+                    <div class="col"><span class="it-title">Koffieplant, Cafeïne </span><span class="it-waarde"><?php the_field('koffieplant_cafeine'); ?></span></div>
                 </div>
             </li>
         <?php } ?>

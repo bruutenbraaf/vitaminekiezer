@@ -48,6 +48,13 @@
                 </div>
             </li>
         <?php } ?>
+        <?php if (get_field('epa_eecosapentaeenzuur')) { ?>
+            <li>
+                <div class="row">
+                    <div class="col"><span class="it-title">EPA (eEcosaPentaeenZuur)</span><span class="it-waarde"><?php the_field('epa_eecosapentaeenzuur'); ?></span></div>
+                </div>
+            </li>
+        <?php } ?>
         <?php if (get_field('lijnzaadolie')) { ?>
             <li>
                 <div class="row">
