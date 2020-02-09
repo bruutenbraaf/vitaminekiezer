@@ -144,6 +144,15 @@ get_header(); ?>
                                                 <?php get_template_part('template-parts/content', 'vitaminen'); ?>
                                                 <?php get_template_part('template-parts/content', 'mineralen'); ?>
                                                 <?php get_template_part('template-parts/content', 'vitamineachtige'); ?>
+                                                <div class="extra-col"><u>Extra ingrediënten:</u> <span class="extra-result"><?php the_field('totaal_aantal_extra_ingredienten'); ?></span>
+                                                    <?php if (get_field('totaal_aantal_extra_ingredienten_uitleg', 'option')) { ?>
+                                                        <div class="i">
+                                                            <div class="i-u">
+                                                                <?php the_field('totaal_aantal_extra_ingredienten_uitleg', 'option'); ?>
+                                                            </div>
+                                                        </div>
+                                                    <?php } ?>
+                                                </div>
                                                 <?php get_template_part('template-parts/content', 'superfoods'); ?>
                                                 <?php get_template_part('template-parts/content', 'nietsuperfoods'); ?>
                                                 <?php get_template_part('template-parts/content', 'aminozuren'); ?>

@@ -32,14 +32,3 @@
         <?php } ?>
     </ul>
 </div>
-
-
-<div class="extra-col"><u>Extra ingrediënten:</u> <span class="extra-result"><?php the_field('totaal_aantal_extra_ingredienten'); ?></span>
-    <?php if (get_field('totaal_aantal_extra_ingredienten_uitleg', 'option')) { ?>
-        <div class="i">
-            <div class="i-u">
-                <?php the_field('totaal_aantal_extra_ingredienten_uitleg', 'option'); ?>
-            </div>
-        </div>
-    <?php } ?>
-</div>
