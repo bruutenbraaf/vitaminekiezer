@@ -82,10 +82,10 @@
                 <h2><?php _e('Ingrediënten:', 'viki'); ?></h2>
                 <div class="ingredient-list">
                     <?php get_template_part('template-parts/content', 'vetten'); ?>
-                    <?php get_template_part('template-parts/content', 'vitaminen'); ?>
                     <?php get_template_part('template-parts/content', 'vitamineachtige'); ?>
-                    <?php get_template_part('template-parts/content', 'superfoods'); ?>
+                    <?php get_template_part('template-parts/content', 'vitaminen'); ?>
                     <?php get_template_part('template-parts/content', 'mineralen'); ?>
+                    <?php get_template_part('template-parts/content', 'superfoods'); ?>
                     <?php get_template_part('template-parts/content', 'nietsuperfoods'); ?>
                     <?php get_template_part('template-parts/content', 'aminozuren'); ?>
                     <?php get_template_part('template-parts/content', 'koolhydraten'); ?>
