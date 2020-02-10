@@ -84,6 +84,15 @@
                     <?php get_template_part('template-parts/content', 'vitaminen'); ?>
                     <?php get_template_part('template-parts/content', 'mineralen'); ?>
                     <?php get_template_part('template-parts/content', 'vitamineachtige'); ?>
+                    <div class="extra-col"><u>Extra ingrediënten:</u> <span class="extra-result"><?php the_field('totaal_aantal_extra_ingredienten'); ?></span>
+                        <?php if (get_field('totaal_aantal_extra_ingredienten_uitleg', 'option')) { ?>
+                            <div class="i">
+                                <div class="i-u">
+                                    <?php the_field('totaal_aantal_extra_ingredienten_uitleg', 'option'); ?>
+                                </div>
+                            </div>
+                        <?php } ?>
+                    </div>
                     <?php get_template_part('template-parts/content', 'superfoods'); ?>
                     <?php get_template_part('template-parts/content', 'nietsuperfoods'); ?>
                     <?php get_template_part('template-parts/content', 'aminozuren'); ?>
@@ -93,9 +102,9 @@
                 </div>
                 <script>
                     var ingredients = jQuery('.ingredient-list').find('.ingredient');
-                    if(ingredients.length > 0) {
+                    if (ingredients.length > 0) {
                         for (i = 0; i < ingredients.length; i++) {
-                            if(jQuery(ingredients[i]).find('ul > li').length > 0) {
+                            if (jQuery(ingredients[i]).find('ul > li').length > 0) {
                                 // found list items in ingredient catgory
                             } else {
                                 jQuery(ingredients[i]).addClass('disabled');
