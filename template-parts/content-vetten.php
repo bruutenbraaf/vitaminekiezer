@@ -16,7 +16,7 @@
         <?php if (get_field('omega-3_niet_gedefinieerd')) { ?>
             <li>
                 <div class="row">
-                    <div class="col"><span class="it-title">OMEGA-3 niet gedefinieerd</span><span class="it-waarde"><?php the_field('omega-3_niet_gedefinieerd'); ?></span></div>
+                    <div class="col"><span class="it-title">Omega-3 niet gedefinieerd</span><span class="it-waarde"><?php the_field('omega-3_niet_gedefinieerd'); ?></span></div>
                 </div>
             </li>
         <?php } ?>
@@ -30,7 +30,7 @@
         <?php if (get_field('epa')) { ?>
             <li>
                 <div class="row">
-                    <div class="col"><span class="it-title">EPA (eEcosaPentaeenZuur)</span><span class="it-waarde"><?php the_field('epa'); ?></span></div>
+                    <div class="col"><span class="it-title">EPA (EcosaPentaeenZuur)</span><span class="it-waarde"><?php the_field('epa'); ?></span></div>
                 </div>
             </li>
         <?php } ?>
@@ -45,13 +45,6 @@
             <li>
                 <div class="row">
                     <div class="col"><span class="it-title">DPA (DocosaPentateenZuur)</span><span class="it-waarde"><?php the_field('dpa_docosapentateenzuur'); ?></span></div>
-                </div>
-            </li>
-        <?php } ?>
-        <?php if (get_field('epa_eecosapentaeenzuur')) { ?>
-            <li>
-                <div class="row">
-                    <div class="col"><span class="it-title">EPA (eEcosaPentaeenZuur)</span><span class="it-waarde"><?php the_field('epa_eecosapentaeenzuur'); ?></span></div>
                 </div>
             </li>
         <?php } ?>

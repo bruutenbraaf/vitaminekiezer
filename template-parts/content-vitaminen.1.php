@@ -1,5 +1,5 @@
 
-    <div class="ingredient">
+    <div class="ingredient junior">
         <div class="i-titel">Vitaminen
             <?php if (get_field('vitamines', 'option')) { ?>
                 <div class="i">

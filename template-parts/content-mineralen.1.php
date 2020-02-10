@@ -1,4 +1,4 @@
-<div class="ingredient">
+<div class="ingredient junior">
     <div class="i-titel">Mineralen
         <?php if (get_field('vitamines', 'option')) { ?>
             <div class="i">

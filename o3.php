@@ -10,7 +10,7 @@ get_header(); ?>
 <?php $product_placeholder = get_field('product_placeholder', 'option'); ?>
 <div class="header-page d-flex justify-content-center align-items-center">
     <div class="inner">
-        <h1><?php _e('Vergelijk hier je producten', 'vitaminekiezer'); ?></h1>
+        <h1><?php _e('Vergelijk hier je Omega-3 Vetzuren', 'vitaminekiezer'); ?></h1>
         <?php if (have_rows('usps', 'option')) : ?>
             <ul>
                 <?php while (have_rows('usps', 'option')) : the_row(); ?>

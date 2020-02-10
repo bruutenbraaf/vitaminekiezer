@@ -485,5 +485,12 @@
                 </div>
             </li>
         <?php } ?>
+        <?php if (get_field('overige_plantenstoffen')) { ?>
+            <li>
+                <div class="row">
+                    <div class="col"><span class="it-title">Overige plantenstoffen</span><span class="it-waarde"><?php the_field('overige_plantenstoffen'); ?></span></div>
+                </div>
+            </li>
+        <?php } ?>
     </ul>
 </div>

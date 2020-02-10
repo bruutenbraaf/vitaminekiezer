@@ -16,7 +16,7 @@
                 </div>
             </li>
         <?php } ?>
-    
+
         <?php if (get_field('l-arginine')) { ?>
             <li>
                 <div class="row">
@@ -24,6 +24,7 @@
                 </div>
             </li>
         <?php } ?>
+
         <?php if (get_field('l-asparaginezuur')) { ?>
             <li>
                 <div class="row">
@@ -31,46 +32,11 @@
                 </div>
             </li>
         <?php } ?>
+
         <?php if (get_field('l-cystine')) { ?>
             <li>
                 <div class="row">
                     <div class="col"><span class="it-title">l-Cystine</span><span class="it-waarde"><?php the_field('l-cystine'); ?></span></div>
-                </div>
-            </li>
-        <?php } ?>
-
-        <?php if (get_field('alfa_liponzuur')) { ?>
-            <li>
-                <div class="row">
-                    <div class="col"><span class="it-title">Alfa Liponzuur</span><span class="it-waarde"><?php the_field('alfa_liponzuur'); ?></span></div>
-                </div>
-            </li>
-        <?php } ?>
-        <?php if (get_field('betaine_hcl')) { ?>
-            <li>
-                <div class="row">
-                    <div class="col"><span class="it-title">Betaine HCl</span><span class="it-waarde"><?php the_field('betaine_hcl'); ?></span></div>
-                </div>
-            </li>
-        <?php } ?>
-        <?php if (get_field('co-enzym_q10')) { ?>
-            <li>
-                <div class="row">
-                    <div class="col"><span class="it-title">Co-enzym Q10</span><span class="it-waarde"><?php the_field('co-enzym_q10'); ?></span></div>
-                </div>
-            </li>
-        <?php } ?>
-        <?php if (get_field('dmae_dimethylethanolamine')) { ?>
-            <li>
-                <div class="row">
-                    <div class="col"><span class="it-title">DMAE (DiMethylEthanolAmine)</span><span class="it-waarde"><?php the_field('dmae_dimethylethanolamine'); ?></span></div>
-                </div>
-            </li>
-        <?php } ?>
-        <?php if (get_field('enzymencomplex')) { ?>
-            <li>
-                <div class="row">
-                    <div class="col"><span class="it-title">Enzymencomplex</span><span class="it-waarde"><?php the_field('enzymencomplex'); ?></span></div>
                 </div>
             </li>
         <?php } ?>
@@ -81,13 +47,6 @@
                 </div>
             </li>
         <?php } ?>
-        <?php if (get_field('l-gluthation')) { ?>
-            <li>
-                <div class="row">
-                    <div class="col"><span class="it-title">l-Gluthation</span><span class="it-waarde"><?php the_field('l-gluthation'); ?></span></div>
-                </div>
-            </li>
-        <?php } ?>
         <?php if (get_field('glycine')) { ?>
             <li>
                 <div class="row">
@@ -95,7 +54,6 @@
                 </div>
             </li>
         <?php } ?>
-
         <?php if (get_field('l-hystidine')) { ?>
             <li>
                 <div class="row">
@@ -110,7 +68,6 @@
                 </div>
             </li>
         <?php } ?>
-
         <?php if (get_field('l-leucine')) { ?>
             <li>
                 <div class="row">
@@ -125,7 +82,6 @@
                 </div>
             </li>
         <?php } ?>
-
         <?php if (get_field('l-methionine')) { ?>
             <li>
                 <div class="row">
@@ -161,6 +117,94 @@
                 </div>
             </li>
         <?php } ?>
+        <?php if (get_field('tryptofaan_of_5-htp')) { ?>
+            <li>
+                <div class="row">
+                    <div class="col"><span class="it-title">Tryptofaan of 5-HTP</span><span class="it-waarde"><?php the_field('tryptofaan_of_5-htp'); ?></span></div>
+                </div>
+            </li>
+        <?php } ?>
+        <?php if (get_field('l-tyrosine')) { ?>
+            <li>
+                <div class="row">
+                    <div class="col"><span class="it-title">l-Tyrosine</span><span class="it-waarde"><?php the_field('l-tyrosine'); ?></span></div>
+                </div>
+            </li>
+        <?php } ?>
+        <?php if (get_field('l-valine')) { ?>
+            <li>
+                <div class="row">
+                    <div class="col"><span class="it-title">l-Valine</span><span class="it-waarde"><?php the_field('l-valine'); ?></span></div>
+                </div>
+            </li>
+        <?php } ?>
+        <?php if (get_field('acetyl-l-carnitine')) { ?>
+            <li>
+                <div class="row">
+                    <div class="col"><span class="it-title">l-Acetyl Carnitine</span><span class="it-waarde"><?php the_field('acetyl-l-carnitine'); ?></span></div>
+                </div>
+            </li>
+        <?php } ?>
+        <?php if (get_field('alfa_liponzuur')) { ?>
+            <li>
+                <div class="row">
+                    <div class="col"><span class="it-title">Alfa Liponzuur</span><span class="it-waarde"><?php the_field('alfa_liponzuur'); ?></span></div>
+                </div>
+            </li>
+        <?php } ?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <?php if (get_field('betaine_hcl')) { ?>
+            <li>
+                <div class="row">
+                    <div class="col"><span class="it-title">Betaine HCl</span><span class="it-waarde"><?php the_field('betaine_hcl'); ?></span></div>
+                </div>
+            </li>
+        <?php } ?>
+        <?php if (get_field('co-enzym_q10')) { ?>
+            <li>
+                <div class="row">
+                    <div class="col"><span class="it-title">Co-enzym Q10</span><span class="it-waarde"><?php the_field('co-enzym_q10'); ?></span></div>
+                </div>
+            </li>
+        <?php } ?>
+        <?php if (get_field('dmae_dimethylethanolamine')) { ?>
+            <li>
+                <div class="row">
+                    <div class="col"><span class="it-title">DMAE (DiMethylEthanolAmine)</span><span class="it-waarde"><?php the_field('dmae_dimethylethanolamine'); ?></span></div>
+                </div>
+            </li>
+        <?php } ?>
+        <?php if (get_field('enzymencomplex')) { ?>
+            <li>
+                <div class="row">
+                    <div class="col"><span class="it-title">Enzymencomplex</span><span class="it-waarde"><?php the_field('enzymencomplex'); ?></span></div>
+                </div>
+            </li>
+        <?php } ?>
+        <?php if (get_field('l-gluthation')) { ?>
+            <li>
+                <div class="row">
+                    <div class="col"><span class="it-title">l-Gluthation</span><span class="it-waarde"><?php the_field('l-gluthation'); ?></span></div>
+                </div>
+            </li>
+        <?php } ?>
+    
         
         <?php if (get_field('melathonine')) { ?>
             <li>
@@ -218,35 +262,7 @@
                 </div>
             </li>
         <?php } ?>
-        <?php if (get_field('tryptofaan_of_5-htp')) { ?>
-            <li>
-                <div class="row">
-                    <div class="col"><span class="it-title">Tryptofaan of 5-HTP</span><span class="it-waarde"><?php the_field('tryptofaan_of_5-htp'); ?></span></div>
-                </div>
-            </li>
-        <?php } ?>
-        <?php if (get_field('l-tyrosine')) { ?>
-            <li>
-                <div class="row">
-                    <div class="col"><span class="it-title">l-Tyrosine</span><span class="it-waarde"><?php the_field('l-tyrosine'); ?></span></div>
-                </div>
-            </li>
-        <?php } ?>
-        <?php if (get_field('l-valine')) { ?>
-            <li>
-                <div class="row">
-                    <div class="col"><span class="it-title">l-Valine</span><span class="it-waarde"><?php the_field('l-valine'); ?></span></div>
-                </div>
-            </li>
-        <?php } ?>
-        <?php if (get_field('acetyl-l-carnitine')) { ?>
-            <li>
-                <div class="row">
-                    <div class="col"><span class="it-title">Acetyl-l-carnitine </span><span class="it-waarde"><?php the_field('acetyl-l-carnitine'); ?></span></div>
-                </div>
-            </li>
-        <?php } ?>
-        <?php if (get_field('vezels_zemelen')) { ?>
+        <!-- <?php if (get_field('vezels_zemelen')) { ?>
             <li>
                 <div class="row">
                     <div class="col"><span class="it-title">Vezels, zemelen</span><span class="it-waarde"><?php the_field('vezels_zemelen'); ?></span></div>
@@ -256,9 +272,9 @@
         <?php if (get_field('enzymen')) { ?>
             <li>
                 <div class="row">
-                    <div class="col"><span class="it-title">Enzymen </span><span class="it-waarde"><?php the_field('enzymen'); ?></span></div>
+                    <div class="col"><span class="it-title">Enzymen</span><span class="it-waarde"><?php the_field('enzymen'); ?></span></div>
                 </div>
             </li>
-        <?php } ?>
+        <?php } ?> -->
     </ul>
 </div>

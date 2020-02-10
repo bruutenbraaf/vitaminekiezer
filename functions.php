@@ -377,15 +377,15 @@ function get_all_them_posts()
 
 
 
-
+// Viki ID
 
 add_filter('manage_multivitaminen_posts_columns', 'set_custom_edit_multivitaminen_columns');
 function set_custom_edit_multivitaminen_columns($columns)
 {
   $columns['vikiid'] = __('Viki ID', 'uitgelicht');
+  $columns['merk'] = __('Merk', 'uitgelicht');
   return $columns;
 }
-
 
 add_action('manage_multivitaminen_posts_custom_column', 'custom_multivitaminen_column', 10, 2);
 function custom_multivitaminen_column($column, $post_id)
@@ -394,4 +394,80 @@ function custom_multivitaminen_column($column, $post_id)
     case 'vikiid':
       echo get_field('viki_unique_id');
   }
+  switch ($column) {
+    case 'merk':
+      echo get_field('merk_header');
+  }
 }
+
+add_filter('manage_omega_vetzuren_posts_columns', 'set_custom_edit_omega_vetzuren_columns');
+function set_custom_edit_omega_vetzuren_columns($columns)
+{
+  $columns['vikiid'] = __('Viki ID', 'uitgelicht');
+  $columns['merk'] = __('Merk', 'uitgelicht');
+  return $columns;
+}
+
+
+add_action('manage_omega_vetzuren_posts_custom_column', 'custom_omega_vetzuren_column', 10, 2);
+function custom_omega_vetzuren_column($column, $post_id)
+{
+  switch ($column) {
+    case 'vikiid':
+      echo get_field('viki_unique_id');
+  }
+  switch ($column) {
+    case 'merk':
+      echo get_field('merk_header');
+  }
+}
+
+add_filter('manage_sport_proteinen_posts_columns', 'set_custom_edit_sport_proteinen_columns');
+function set_custom_edit_sport_proteinen_columns($columns)
+{
+  $columns['vikiid'] = __('Viki ID', 'uitgelicht');
+  $columns['merk'] = __('Merk', 'uitgelicht');
+  return $columns;
+}
+
+
+add_action('manage_sport_proteinen_posts_custom_column', 'custom_sport_proteinen_column', 10, 2);
+function custom_sport_proteinen_column($column, $post_id)
+{
+  switch ($column) {
+    case 'vikiid':
+      echo get_field('viki_unique_id');
+  }
+  switch ($column) {
+    case 'merk':
+      echo get_field('merk_header');
+  }
+}
+
+
+
+
+function custom_search_query( $query ) {
+  $custom_fields = array(
+      // put all the meta fields you want to search for here
+      "viki_unique_id",
+      "merk_header"
+  );
+  $searchterm = $query->query_vars['s'];
+
+  // we have to remove the "s" parameter from the query, because it will prevent the posts from being found
+  $query->query_vars['s'] = "";
+
+  if ($searchterm != "") {
+      $meta_query = array('relation' => 'OR');
+      foreach($custom_fields as $cf) {
+          array_push($meta_query, array(
+              'key' => $cf,
+              'value' => $searchterm,
+              'compare' => 'LIKE'
+          ));
+      }
+      $query->set("meta_query", $meta_query);
+  };
+}
+add_filter( "pre_get_posts", "custom_search_query");
