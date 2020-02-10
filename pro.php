@@ -151,7 +151,7 @@ get_header(); ?>
                                                         </div>
                                                     <?php } ?>
                                                 </div>
-                                                <?php get_template_part('template-parts/content', 'vitaminen'); ?>
+                                                <?php get_template_part('template-parts/content', 'vitaminens'); ?>
                                                 <?php get_template_part('template-parts/content', 'mineralen'); ?>
                                                 <?php get_template_part('template-parts/content', 'vitamineachtige'); ?>
                                                 <?php get_template_part('template-parts/content', 'superfoods'); ?>
