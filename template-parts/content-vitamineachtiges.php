@@ -16,14 +16,14 @@
                 </div>
             </li>
         <?php } ?>
-        <?php if (get_field('inositol_mg') != "-")) { ?>
+        <?php if (get_field('inositol_mg') != "-") { ?>
             <li>
                 <div class="row">
                     <div class="col"><span class="it-title">Inositol</span><span class="it-waarde"><?php the_field('inositol_mg'); ?></span></div>
                 </div>
             </li>
         <?php } ?>
-        <?php if (get_field('paba_para-aminobenzoezuur_mg') != "-")) { ?>
+        <?php if (get_field('paba_para-aminobenzoezuur_mg') != "-") { ?>
             <li>
                 <div class="row">
                     <div class="col"><span class="it-title">PABA (para-aminobenzoëzuur)</span><span class="it-waarde"><?php the_field('paba_para-aminobenzoezuur_mg'); ?></span></div>
