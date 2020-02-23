@@ -81,7 +81,7 @@
                     <div class="col"><?php the_field('vitamine_d_w'); ?></div>
                 </div>
             </li><?php } ?>
-        <?php if (get_field('vitamine_e') != "-") && get_field('vitamine_e_w') != "-") { ?><li>
+        <?php if (get_field('vitamine_e') != "-") OR get_field('vitamine_e_w') != "-") { ?><li>
                 <div class="row">
                     <div class="col"><span class="it-title">Vitamine E</span><span class="it-waarde"><?php the_field('vitamine_e'); ?></span></div>
                     <div class="col"><?php the_field('vitamine_e_w'); ?></div>
