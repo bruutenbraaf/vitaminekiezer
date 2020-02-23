@@ -12,11 +12,14 @@
         <?php } ?>
     </div>
 </div>
-<?php $tijd = get_field('tijd_tot_popup', 'option'); ?>
+<?php $tijd = get_field('pop_up_vertraging', 'option'); ?>
 <script>
     jQuery(document).ready(function() {
         if ('set' !== jQuery.cookie('review-pop')) {
-            jQuery('.popupreview').delay(24000).addClass('open');
+            jQuery('.popupreview').delay(<?php echo $tijd; ?>).queue(function(next) {
+                $(this).addClass('open');
+                next();
+            });
         }
         jQuery('.closereview').on('click', function() {
             jQuery('.popupreview').removeClass('open');
