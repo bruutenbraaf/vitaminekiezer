@@ -34,22 +34,6 @@
             <div class="row">
                 <div class="col-lg-3 col-md-3 sidebar">
                     <div class="row">
-                        <div class="col-md-12">
-                            <?php if (is_active_sidebar('vergelijker_reviews')) {
-                                dynamic_sidebar('vergelijker_reviews');
-                            } ?>
-                        </div>
-                        <div class="col-sm-6 col-md-12">
-                            <button href="#" class="btn orderbtn openbtn">Introductie video</button>
-                            <div class="popup">
-                                <div class="close"></div>
-                                <div class="innerpop">
-                                    <?php if (is_active_sidebar('verlijker_boven')) {
-                                        dynamic_sidebar('verlijker_boven');
-                                    } ?>
-                                </div>
-                            </div>
-                        </div>
                         <div class="col-sm-6 col-md-12">
                             <div class="mobile-toggle">
                                 <button class="btn filter-toggle info-widget">
@@ -81,6 +65,22 @@
                                     </div>
                                 </div>
                             </div>
+                        </div>
+                        <div class="col-sm-6 col-md-12">
+                            <button href="#" class="btn orderbtn openbtn">Introductie video</button>
+                            <div class="popup">
+                                <div class="close"></div>
+                                <div class="innerpop">
+                                    <?php if (is_active_sidebar('verlijker_boven')) {
+                                        dynamic_sidebar('verlijker_boven');
+                                    } ?>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <?php if (is_active_sidebar('vergelijker_reviews')) {
+                                dynamic_sidebar('vergelijker_reviews');
+                            } ?>
                         </div>
                     </div>
 

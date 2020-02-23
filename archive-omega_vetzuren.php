@@ -34,22 +34,6 @@
             <div class="row">
                 <div class="col-lg-3 col-md-3 sidebar">
                     <div class="row">
-                        <div class="col-md-12">
-                            <?php if (is_active_sidebar('vergelijker_reviews')) {
-                                dynamic_sidebar('vergelijker_reviews');
-                            } ?>
-                        </div>
-                        <div class="col-sm-6 col-md-12">
-                            <button href="#" class="btn orderbtn openbtn">Introductie video</button>
-                            <div class="popup">
-                                <div class="close"></div>
-                                <div class="innerpop">
-                                    <?php if (is_active_sidebar('verlijker_boven')) {
-                                        dynamic_sidebar('verlijker_boven');
-                                    } ?>
-                                </div>
-                            </div>
-                        </div>
                         <div class="col-sm-6 col-md-12">
                             <div class="mobile-toggle">
                                 <button class="btn filter-toggle info-widget">
@@ -81,6 +65,22 @@
                                     </div>
                                 </div>
                             </div>
+                        </div>
+                        <div class="col-sm-6 col-md-12">
+                            <button href="#" class="btn orderbtn openbtn">Introductie video</button>
+                            <div class="popup">
+                                <div class="close"></div>
+                                <div class="innerpop">
+                                    <?php if (is_active_sidebar('verlijker_boven')) {
+                                        dynamic_sidebar('verlijker_boven');
+                                    } ?>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <?php if (is_active_sidebar('vergelijker_reviews')) {
+                                dynamic_sidebar('vergelijker_reviews');
+                            } ?>
                         </div>
                     </div>
 
@@ -155,24 +155,24 @@
                             <?php endwhile; ?>
                             <?php wp_reset_postdata(); ?>
                         <?php endif; ?>
-				        <section id="pagination">
-				            <div class="pagination d-flex justify-content-center align-items-center">
-				                <a href="<?php echo get_home_url(); ?>/vergelijker/" class="back btn mobile-btn">Naar vergelijker</a>
-				                <?php echo paginate_links(array(
-				                    'prev_text' => '
+                        <section id="pagination">
+                            <div class="pagination d-flex justify-content-center align-items-center">
+                                <a href="<?php echo get_home_url(); ?>/vergelijker/" class="back btn mobile-btn">Naar vergelijker</a>
+                                <?php echo paginate_links(array(
+                                    'prev_text' => '
 				        <span class="prev">
 				            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
 				            <path d="M9.19719 14.9731L8.40442 15.7525C8.06874 16.0826 7.52595 16.0826 7.19384 15.7525L0.251758 8.93032C-0.0839192 8.60027 -0.0839192 8.06657 0.251758 7.74003L7.19384 0.914286C7.52952 0.584235 8.07231 0.584235 8.40442 0.914286L9.19719 1.69377C9.53644 2.02733 9.52929 2.57156 9.1829 2.8981L4.87981 6.92894H15.143C15.6179 6.92894 16 7.30464 16 7.77163V8.8952C16 9.36219 15.6179 9.73789 15.143 9.73789H4.87981L9.1829 13.7687C9.53286 14.0953 9.54001 14.6395 9.19719 14.9731Z" fill="black"/>
 				            </svg>        
 				        </span>',
-				                    'next_text' => '<span class="next"> 
+                                    'next_text' => '<span class="next"> 
 				            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
 				            <path d="M6.80281 14.9731L7.59558 15.7525C7.93126 16.0826 8.47405 16.0826 8.80616 15.7525L15.7482 8.93032C16.0839 8.60027 16.0839 8.06657 15.7482 7.74003L8.80616 0.914286C8.47048 0.584235 7.92769 0.584235 7.59558 0.914286L6.80281 1.69377C6.46356 2.02733 6.47071 2.57156 6.8171 2.8981L11.1202 6.92894H0.857047C0.3821 6.92894 0 7.30464 0 7.77163V8.8952C0 9.36219 0.3821 9.73789 0.857047 9.73789H11.1202L6.8171 13.7687C6.46714 14.0953 6.45999 14.6395 6.80281 14.9731Z" fill="black"/>
 				            </svg>            
 				        </span>'
-				                )); ?>
-				            </div>
-				        </section>
+                                )); ?>
+                            </div>
+                        </section>
                     </div>
                 </div>
             </div>
