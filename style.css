@@ -27,6 +27,17 @@ body {
   background-image: url(./img/background.svg);
 }
 
+.alignleft {
+  float: left;
+  padding: 20p;
+  margin-right: 30px;
+}
+
+.alignright {
+  float:right;
+  margin-left: 30px;
+}
+
 button {
   -webkit-appearance: none;
   appearance: none;
