@@ -1,4 +1,8 @@
     <div class="ingredient junior">
+        <?php if (get_field('totaal_koolhydraten')) { ?>
+            <div class="extra-col"><u>Totaal koolhydraten:</u> <span class="extra-result"><?php the_field('totaal_koolhydraten'); ?> mg</span>
+            </div>
+        <?php } ?>
         <div class="i-titel">Koolhydraten
             <?php if (get_field('koolhydraten_nuttige_suikers', 'option')) { ?>
                 <div class="i">
