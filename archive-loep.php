@@ -39,7 +39,9 @@
             </div>
             <div class="col-lg-9 col-md-9">
                 <div class="row">
-                    <?php $loop = new WP_Query(array(
+                    <?php 
+                    $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+                    $loop = new WP_Query(array(
                         'post_type' => 'loep',
                         'posts_per_page' => 10,
                         'order' => 'DESC',
