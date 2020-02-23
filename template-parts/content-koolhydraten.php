@@ -10,8 +10,10 @@
         </div>
         <ul>
             <?php if (get_field('totaal_koolhydraten')) { ?>
-                <div class="extra-col"><u>Totaal koolhydraten:</u> <span class="extra-result"><?php the_field('totaal_koolhydraten'); ?> mg</span>
-                </div>
+                <li>
+                    <div class="extra-col"><u>Totaal koolhydraten:</u> <span class="extra-result"><?php the_field('totaal_koolhydraten'); ?> mg</span>
+                    </div>
+                </li>
             <?php } ?>
             <?php if (get_field('ss-glucanen')) { ?>
                 <li>
