@@ -152,23 +152,6 @@
                 </div>
             </li>
         <?php } ?>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         <?php if (get_field('betaine_hcl')) { ?>
             <li>
                 <div class="row">
